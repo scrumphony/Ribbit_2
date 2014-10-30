@@ -15,7 +15,6 @@ import android.widget.TextView;
 import com.parse.LogInCallback;
 import com.parse.ParseException;
 import com.parse.ParseUser;
-import com.parse.SignUpCallback;
 
 
 public class LoginActivity extends Activity {
@@ -24,6 +23,7 @@ public class LoginActivity extends Activity {
     protected EditText mUserName;
     protected EditText mPassword;
     protected Button mLoginButton;
+    protected TextView mForgotPasswordView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +37,15 @@ public class LoginActivity extends Activity {
             public void onClick(View view) {
                 Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        mForgotPasswordView = (TextView) findViewById(R.id.forgot_password_label);
+        mForgotPasswordView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent resetIntent = new Intent(LoginActivity.this, ResendPasswordActivity.class);
+                startActivity(resetIntent);
             }
         });
 
