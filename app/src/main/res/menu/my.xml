@@ -6,7 +6,7 @@
         android:orderInCategory="100"
         android:showAsAction="never" />
     <item android:id="@+id/action_edit_friends"
-        android:title="@string/menu_edit_frieds_label"
+        android:title="@string/menu_edit_friends_label"
         android:orderInCategory="100"
         android:showAsAction="never" />
 </menu>

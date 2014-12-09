@@ -25,8 +25,10 @@
     <string name="reset_error_title">Oooops!</string>
     <string name="empty_inbox_label">No new messages.</string>
     <string name="empty_inbox_friends">Add a friend to begin.</string>
-    <string name="menu_edit_frieds_label">Edit Friends</string>
+    <string name="menu_edit_friends_label">Edit Friends</string>
     <string name="title_activity_edit_friends">EditFriendsActivity</string>
     <string name="empty_friends_label">Hey, make new friends :)</string>
+    <string name="parse_error_title">Could not parse user name.</string>
+    <string name="error_title">We\'re sorry!</string>
 
 </resources>
