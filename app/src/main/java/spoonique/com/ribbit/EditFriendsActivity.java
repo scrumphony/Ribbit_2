@@ -1,6 +1,5 @@
 package spoonique.com.ribbit;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.os.Bundle;
@@ -61,7 +60,9 @@ public class EditFriendsActivity extends ListActivity {
                         usernames[i] = user.getUsername();
                         i++;
                     }
-                    ArrayAdapter<String> adapter = new ArrayAdapter<String>(EditFriendsActivity.this, android.R.layout.simple_list_item_checked, usernames);
+                    ArrayAdapter<String> adapter = new ArrayAdapter<String>(EditFriendsActivity.this,
+                            android.R.layout.simple_list_item_checked,
+                            usernames);
                     setListAdapter(adapter);
                 } else {
                     Log.e(TAG, e.getMessage());

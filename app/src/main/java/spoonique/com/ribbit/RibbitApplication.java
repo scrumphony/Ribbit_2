@@ -3,9 +3,9 @@ package spoonique.com.ribbit;
 import android.app.Application;
 
 import com.parse.Parse;
-import com.parse.ParseObject;
 
 /**
+ * Class to initialise the Parse Framework.
  * Created by maloeffler on 28.10.2014.
  */
 public class RibbitApplication extends Application {
